@@ -1,76 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head><Title> ICT Lessons </title>
-<link rel="stylesheet" href="design.css" type="text/css">
+<head>
+  <title>ICT Lessons - Lesson 5</title>
+  <link rel="stylesheet" href="design.css" type="text/css">
 </head>
-<body style="background-color:CornflowerBlue;">
+<body style="background-color:CornflowerBlue; color:black; font-family:Arial, sans-serif; margin:0; padding:0;">
 
-<nav class="navigation">
-<ul>
- <li><a href="Lessons.html"> Lesson 1 </a></li>
- <li><a href="Lesson2.html"> Lesson 2 </a></li>
- <li><a href="Lesson3.html"> Lesson 3 </a></li>
- <li><a href="Lesson4.html"> Lesson 4 </a></li>
- <li><a href="Lesson5.html"> Lesson 5 </a></li>
- <li><a href="Lesson6.html"> Lesson 6 </a></li>
- <li><a href="index.html"> Home </a></li>
-</ul>
-</nav>
+  <nav class="navigation" style="text-align:center; background-color:#333; padding:10px;">
+    <ul style="list-style:none; margin:0; padding:0; display:inline-flex; gap:15px;">
+      <li><a href="Lesson2.html" style="color:white; text-decoration:none;">Lesson 2</a></li>
+      <li><a href="Lesson3.html" style="color:white; text-decoration:none;">Lesson 3</a></li>
+      <li><a href="Lesson4.html" style="color:white; text-decoration:none;">Lesson 4</a></li>
+      <li><a href="Lesson5.html" style="color:white; text-decoration:none;">Lesson 5</a></li>
+      <li><a href="Lesson6.html" style="color:white; text-decoration:none;">Lesson 6</a></li>
+      <li><a href="index.html" style="color:white; text-decoration:none;">Home</a></li>
+    </ul>
+  </nav>
 
+  <section style="margin:20px auto; width:85%;">
+    <h1>CSS Selectors</h1>
+    <p>CSS selectors are used to find or select the HTML elements that you want to style.</p>
 
-<h1> CSS Selectors </h1>
-<p> CSS selectors are used to “find” or “select” the HTML elements that you want to style </p>
+    <h3>CSS Selectors Are Divided into 6 Types</h3>
+    <ol>
+      <li>Class Selector</li>
+      <li>Element Selector (Tag Selector)</li>
+      <li>ID Selector</li>
+      <li>Universal Selector</li>
+      <li>Group Selector</li>
+      <li>Attribute Selector</li>
+    </ol>
 
-<h3 class="ICT"> CSS Selectors are divided into 6 types </h3>
-<ol class="Lessons">
-<li> Class Selectors </li>
-<li> Elements Selector or Tag Selector </li> 
-<li> ID Selector </li>
-<li> Universal Selector </li>
-<li> Group Selector </li> 
-<li> Attribute Selector </li>
-</ol>
-<br>
+    <h3>Element Selector</h3>
+    <p>The element selector selects all instances of a specific HTML element, such as &lt;p&gt;, &lt;div&gt;, or &lt;h1&gt;.</p>
+    <p>Use an element selector to apply a style to all occurrences of a tag on the page.</p>
+    <img src="images/Lesson5.jpg" alt="Element Selector Example" width="600" style="margin:10px;">
 
-<h3 class="ICT"> Element Selectors </h3>
-<p> selects HTML elements (p, div, h1, etc.) and applies CSS </p>
-<p> Use an element selector to style all occurrences of a specific HTML tag (like all paragraph or heading tags). </p>
-<img src="Lesson5.jpg" alt="Element Selector">
+    <h3>ID Selector</h3>
+    <ul>
+      <li>Used to apply a style to one unique element on a page.</li>
+      <li>Typically used once — often for a page title, navigation bar, or main content area.</li>
+      <li>Defined using a hash symbol (#) followed by the ID name.</li>
+      <li>ID selectors are unique and should only target one element.</li>
+      <li>Use an ID selector when styling a single unique element, like a header or footer.</li>
+    </ul>
+    <img src="images/Lesson5A.jpg" alt="ID Selector Example" width="600" style="margin:10px;">
 
-<h3 class="ICT"> ID Selector </h3>
-<ul class="Lesson">
-<li> is a style applied to one element in a page. </li>
-<li> normally used once, usually in a page title or the navigation part of the page.</li>
-<li>defined by a hash and uses id attribute of the HTML element </li>
-<li> the ID selector is unique and selects one unique element </li>
-<li> ID selector selects the HTML element with a unique identifier (id) and adds CSS to it. </li>
-<li> Use an ID selector when styling a unique element thatappears only once on a page (like a header, footer, or mainsection) <li>
-</ul>
-<img src="Lesson5A.jpg" alt="ID Selector">
-<br>
+    <h3>Universal Selector</h3>
+    <p>The universal selector selects every single HTML element on the page using the asterisk (*) character.</p>
+    <p>Use the universal selector when you want to style all elements — for example, resetting margins, padding, or box-sizing.</p>
+    <img src="images/Lesson5B.jpg" alt="Universal Selector Example" width="600" style="margin:10px;">
 
-<h3 class="ICT"> Universal Selector </h3>
-<p> The universal selector selects every single HTML element on the page. It is written using the asterisk ( * ) character </p>
-<p> Use the universal selector when you want to style allelements on the page — for example, to reset margins,padding, or box-sizing </p>
-<img src="Lesson5B.jpg" alt="Universal Selector">
-<br>
+    <h3>Group Selector</h3>
+    <p>The group selector allows you to select multiple elements and apply the same style to all of them at once.</p>
+    <p>Use a group selector when several elements share the same styling — it helps reduce repetitive code.</p>
+    <img src="images/Lesson5C.jpg" alt="Group Selector Example" width="600" style="margin:10px;">
 
-<h3 class="ICT"> Group Selector </h3>
-<p> The group selector allows you to select multiple elements and apply the same style to all of them. </p>
-<p> Use a group selector when different elements share the same styling — to avoid repeating code </p>
-<img src="Lesson5C.jpg" alt="Group Selector">
-<br>
+    <h3>Attribute Selector</h3>
+    <p>The attribute selector allows you to style elements based on their attributes or attribute values.</p>
+    <p>Use this when you want to apply styles to elements with specific attributes, such as links with certain href values.</p>
+    <img src="images/Lesson5D.jpg" alt="Attribute Selector Example" width="600" style="margin:10px;">
 
+    <hr color="RoyalBlue" style="height:25px; border:8px groove DarkSlateGray; margin:30px 0;">
 
-<h3 class="ICT"> Attribute Selector </h3>
-<p> Use an attribute selector when you want to style elements based on their HTML attributes or attribute </p>
-<p> The attribute selector selects elements based on specific attribute </p>
-<img src="Lesson5D.jpg" alt="Attribute Selector">
-<br>
-<hr color="RoyalBlue" style="height:25px;border:8px Groove DarkSlateGray;Margin:5px;">
-<h1> Reflection </h1>
-<p> I learned that there are 6 types of CSS Selectors, each with their own syntax, what they are applied to, and when should I use them in coding with CSS </p>
+    <h1>Reflection</h1>
+    <p>In this lesson, I learned about the six types of CSS selectors, their syntax, and their unique purposes. Understanding how and when to use each selector helps make web design cleaner, more organized, and efficient.</p>
+  </section>
 
 </body>
-
 </html>
